@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2014-02-19 15:49:53
+  client_id: 
+  practitioner_id: 
+  consultation_type_id: 
+
+two:
+  date: 2014-02-19 15:49:53
+  client_id: 
+  practitioner_id: 
+  consultation_type_id: 

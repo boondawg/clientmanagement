@@ -1,0 +1,17 @@
+<% provide(:title, 'Create Client') %>
+<h1>Create Practitioner</h1>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@practitioner) do |f| %>
+
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+
+        <%= f.label :email %>
+        <%= f.text_field :email %>
+
+        <%= f.submit "Create new practitioners", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>

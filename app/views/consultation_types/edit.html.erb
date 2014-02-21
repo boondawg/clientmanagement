@@ -1,0 +1,17 @@
+<% provide(:title, 'Edit Consultation Type') %>
+<h1>Update Consultation Type</h1>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@consultation_type) do |f| %>
+
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+
+        <%= f.label :cost %>
+        <%= f.text_field :cost %>
+
+        <%= f.submit "Update consultation type", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>

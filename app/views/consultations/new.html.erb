@@ -1,0 +1,23 @@
+<% provide(:title, 'Create Consultation') %>
+<h1>Create Consultation</h1>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@consultation) do |f| %>
+
+        <%= f.label :date %>
+        <%= f.datetime_select :date %>
+
+        <%= f.label :client %>
+        <%= f.collection_select(:client_id, Client.all, :id, :name, :prompt => 'Please Select a Client') %>
+
+        <%= f.label :practitioner %>
+        <%= f.collection_select(:practitioner_id, Practitioner.all, :id, :name, :prompt => 'Please Select a Practitioner') %>
+
+        <%= f.label :consultation_type %>
+        <%= f.collection_select(:consultation_type_id, ConsultationType.all, :id, :name, :prompt => 'Please Select a Practitioner') %>
+
+        <%= f.submit "Create new consultation", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>

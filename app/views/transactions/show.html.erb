@@ -1,0 +1,35 @@
+<% provide(:title, @practitioner.name) %>
+<div class="row">
+  <aside class="span4">
+    <section>
+
+<p>
+  <strong>Transaction type:</strong>
+  <%= @transaction.transaction_type %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @transaction.amount %>
+</p>
+
+<p>
+  <strong>Consultation:</strong>
+  <%= @transaction.consultation %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @transaction.date %>
+</p>
+
+<p>
+  <strong>Payment type:</strong>
+  <%= @transaction.payment_type %>
+</p>
+
+<%= link_to 'Edit', edit_transaction_path(@transaction) %> |
+<%= link_to 'Back', transactions_path %>
+</section>
+      </aside>
+    </div>

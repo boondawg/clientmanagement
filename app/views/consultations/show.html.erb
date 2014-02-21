@@ -1,0 +1,13 @@
+<% provide(:title, @consultation.client.name) %>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <h1>
+        <%= @consultation.date %>
+        <%= @consultation.client.name %>
+        <%= @consultation.practitioner.name %>
+        <%= @consultation.consultation_type.name %>
+      </h1>
+    </section>
+  </aside>
+</div>
