@@ -1,9 +1,9 @@
-<% provide(:title, @client.name) %>
+<% provide(:title, @client.first_name + ' ' + @client.last_name) %>
 <div class="row">
   <aside class="span4">
     <section>
       <h1>
-          <%= @client.name %>
+          <%= @client.first_name + ' '+ @client.last_name %>
       </h1>
     </section>
   </aside>

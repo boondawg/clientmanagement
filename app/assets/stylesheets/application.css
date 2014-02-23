@@ -11,5 +11,13 @@
  *= require_self
  *= require font-awesome
  *= require bootstrap
- *= require_tree .
+ *= require uniform.default.css
+ *= require style-metronic
+ *= require style
+ *= require style-responsive
+ *= require plugins
+ *= require themes/default
+ *= require custom
+
+ * require_tree .
  */

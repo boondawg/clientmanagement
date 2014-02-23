@@ -11,14 +11,19 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery-migrate-min
-//= require jquery_ujs
+// require jquery-migrate-min
+// require jquery_ujs
+// require jquery-1.10.2.min
+// require jquery-migrate-1.2.1.min
 //= require jquery.ui.all
+// require jquery-ui-1.10.3.custom.min
 //= require bootstrap
-//= require bootstrap-dropdown
-//= require jquery.slimscroll.min
-
+// require bootstrap.min
+//= require bootstrap-hover-dropdown.min.js
+//= require jquery.slimscroll
 //= require jquery.blockui.min
-
+//= require jquery.cokie.min.js
+//= require jquery.uniform.min.js
 //= require turbolinks
-//= require_tree .
+//= require core/app
+// require_tree .

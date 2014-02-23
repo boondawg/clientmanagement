@@ -1,29 +1,169 @@
-<% provide(:title, 'Create Client') %>
+<% provide(:title, 'Clients') %>
 <h1>Create Client</h1>
-
-<div class="row">
-  <div class="span6 offset3">
-    <%= form_for(@client) do |f| %>
-
-        <%= f.label :name %>
-        <%= f.text_field :name %>
-
-        <%= f.label :email %>
-        <%= f.text_field :email %>
-
-        <%= f.label :weight %>
-        <%= f.text_field :weight %>
-
-        <%= f.label :dob %>
-        <%= f.date_select :dob %>
-
-        <%= f.label :gender %>
-        <%= f.text_field :gender %>
-
-        <%= f.label :address %>
-        <%= f.text_area :address %>
-
-        <%= f.submit "Create new client", class: "btn btn-large btn-primary" %>
-    <% end %>
+<div class="tab-pane " id="tab_2">
+  <div class="portlet box green">
+    <div class="portlet-title">
+      <div class="caption">
+        <i class="fa fa-reorder"></i>
+      </div>
+      <div class="tools">
+        <a href="javascript:;" class="collapse">
+        </a>
+        <a href="#portlet-config" data-toggle="modal" class="config">
+        </a>
+        <a href="javascript:;" class="reload">
+        </a>
+        <a href="javascript:;" class="remove">
+        </a>
+      </div>
+    </div>
+    <div class="portlet-body form">
+      <!-- BEGIN FORM-->
+      <%= form_for @client, :html => {:class => "form-horizontal"} do |f| %>
+        <div class="form-body">
+          <h3 class="form-section">Personal Information</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <%= f.label :first_name, :class => "control-label col-md-3" %>
+                <div class="col-md-9">
+                  <%= f.text_field :first_name , :class => "form-control"%>
+                </div>
+              </div>
+            </div>
+            <!--/span-->
+            <div class="col-md-6">
+              <div class="form-group">
+                <%= f.label :last_name, :class => "control-label col-md-3" %>
+                <div class="col-md-9">
+                  <%= f.text_field :last_name , :class => "form-control"%>
+                </div>
+              </div>
+            </div>
+            <!--/span-->
+          </div>
+          <!--/row-->
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <%= f.label :gender, :class => "control-label col-md-3" %>
+                <div class="col-md-9">
+                  <%= f.select :gender, {"Male" =>1 ,"Female" => 2}, :class => "form-control"   %>
+                </div>
+              </div>
+            </div>
+            <!--/span-->
+            <div class="col-md-6">
+              <div class="form-group">
+                <%= f.label :date_of_birth, :class=>"control-label col-md-3"%>
+                <div class="col-md-9">
+                  <%= f.text_field :date_of_birth, :class=>"form-control", :placeholder=>"dd/mm/yyyy"%>
+                </div>
+              </div>
+            </div>
+            <!--/span-->
+          </div>
+          <!--/row-->
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <%= f.label :email, :class=>"control-label col-md-3"%>
+                <div class="col-md-9">
+                  <%= f.text_field :email, :class=>"form-control"%>
+                </div>
+              </div>
+            </div>
+            <!--/span-->
+            <div class="col-md-6">
+              <div class="form-group">
+                <%= f.label :weight, :class=>"control-label col-md-3"%>
+                <div class="col-md-9">
+                  <%= f.text_field :weight, :class=>"form-control"%>
+                </div>
+              </div>
+            </div>
+            <!--/span-->
+          </div>
+          <h3 class="form-section">Address</h3>
+          <!--/row-->
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <%= f.label :address,:class=>"control-label col-md-3"%>
+                <div class="col-md-9">
+                  <%= f.text_field :address, :class=>"form-control"%>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label col-md-3">Address 2</label>
+                <div class="col-md-9">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label col-md-3">City</label>
+                <div class="col-md-9">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+            </div>
+            <!--/span-->
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label col-md-3">State</label>
+                <div class="col-md-9">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+            </div>
+            <!--/span-->
+          </div>
+          <!--/row-->
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label col-md-3">Post Code</label>
+                <div class="col-md-9">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+            </div>
+            <!--/span-->
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="control-label col-md-3">Country</label>
+                <div class="col-md-9">
+                  <select class="form-control">
+                    <option>Country 1</option>
+                    <option>Country 2</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <!--/span-->
+          </div>
+          <!--/row-->
+        </div>
+        <div class="form-actions fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="col-md-offset-3 col-md-9">
+                <%= f.submit "Create new client", class: "btn green" %>
+                <button type="button" class="btn default">Cancel</button>
+              </div>
+            </div>
+            <div class="col-md-6">
+            </div>
+          </div>
+        </div>
+      <%end%>
+      <!-- END FORM-->
+    </div>
   </div>
 </div>
