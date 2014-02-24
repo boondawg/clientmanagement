@@ -19,7 +19,7 @@
     </div>
     <div class="portlet-body form">
       <!-- BEGIN FORM-->
-      <%= form_for @client, :html => {:class => "form-horizontal"} do |f| %>
+      <%= form_for @client, :html => {:class => 'form-horizontal'} do |f| %>
           <div class="form-body">
             <h3 class="form-section">Personal Information</h3>
             <div class="row">
@@ -46,9 +46,9 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <%= f.label :gender, :class => "control-label col-md-3" %>
+                  <%= f.label :gender, :class => 'control-label col-md-3' %>
                   <div class="col-md-9">
-                    <%= f.select :gender, {"Male" =>1 ,"Female" => 2}, :class => "form-control"   %>
+                    <%= f.select :gender, { Male:1 , Female:2}, :class => 'form-control'   %>
                   </div>
                 </div>
               </div>
@@ -154,7 +154,7 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="col-md-offset-3 col-md-9">
-                  <%= f.submit "Update new client", class: "btn green" %>
+                  <%= f.submit 'Update new client', class: 'btn green' %>
                   <button type="button" class="btn default">Cancel</button>
                 </div>
               </div>

@@ -35,15 +35,15 @@ ActiveRecord::Schema.define(version: 20140223074443) do
   create_table "consultations", force: true do |t|
     t.datetime "date"
     t.integer  "client_id"
-    t.integer  "practitioners_id"
-    t.integer  "consultation_types_id"
+    t.integer  "practitioner_id"
+    t.integer  "consultation_type_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   add_index "consultations", ["client_id"], name: "index_consultations_on_client_id"
-  add_index "consultations", ["consultation_types_id"], name: "index_consultations_on_consultation_types_id"
-  add_index "consultations", ["practitioners_id"], name: "index_consultations_on_practitioners_id"
+  add_index "consultations", ["consultation_type_id"], name: "index_consultations_on_consultation_type_id"
+  add_index "consultations", ["practitioner_id"], name: "index_consultations_on_practitioner_id"
 
   create_table "practitioners", force: true do |t|
     t.string   "name"
