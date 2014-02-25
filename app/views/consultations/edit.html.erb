@@ -5,8 +5,11 @@
   <div class="span6 offset3">
     <%= form_for(@consultation) do |f| %>
 
-        <%= f.label :date %>
-        <%= f.datetime_select :date %>
+        <%= f.label :start_date_time %>
+        <%= f.datetime_select :start_date_time %>
+
+        <%= f.label :end_date_time %>
+        <%= f.datetime_select :end_date_time %>
 
         <%= f.label :client %>
         <%= f.collection_select(:client_id, Client.all, :id, :name, :prompt => 'Please Select a Client') %>

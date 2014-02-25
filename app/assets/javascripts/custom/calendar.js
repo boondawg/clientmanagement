@@ -124,7 +124,8 @@ var Calendar = function () {
                         $(this).remove();
                     }
                 },
-                events: [{
+                events: '/consultations'
+                    /*[{
                         title: 'All Day Event',                        
                         start: new Date(y, m, 1),
                         backgroundColor: App.getLayoutColorCode('yellow')
@@ -166,7 +167,7 @@ var Calendar = function () {
                         backgroundColor: App.getLayoutColorCode('yellow'),
                         url: 'http://google.com/',
                     }
-                ]
+                ]*/
             });
 
         }

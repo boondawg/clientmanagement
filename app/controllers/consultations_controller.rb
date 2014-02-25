@@ -30,12 +30,18 @@ class ConsultationsController < ApplicationController
   end
 
   def index
+@consultations = Consultation.all
 
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @consultations }
+      format.js  { render :json => @consultations }
+      end
   end
 
   private
   def consultation_params
-    params.require(:consultation).permit(:date, :client_id, :practitioner_id, :consultation_type_id)
+    params.require(:consultation).permit(:start_date_time, :end_date_time, :client_id, :practitioner_id, :consultation_type_id)
   end
 
 
