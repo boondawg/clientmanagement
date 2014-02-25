@@ -29,6 +29,11 @@ License: You must have a valid license purchased only from themeforest(the above
   <!-- BEGIN THEME STYLES -->
   <%= stylesheet_link_tag "application", media: "all",
                           "data-turbolinks-track" => true %>
+
+  <% if content_for?(:page_css) %>
+      <%= yield(:page_css) %>
+  <%end%>
+
   <!-- END THEME STYLES -->
   <link rel="shortcut icon" href="favicon.ico"/>
 </head>
@@ -229,9 +234,15 @@ License: You must have a valid license purchased only from themeforest(the above
 
 <!-- END CORE PLUGINS -->
 <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+<% if content_for?(:page_js) %>
+    <%= yield(:page_js)%>
+<% end %>
 <script>
     jQuery(document).ready(function() {
         App.init();
+        <% if content_for?(:custom_init) %>
+            <%= yield(:custom_init)%>
+        <% end %>
     });
 </script>
 <!-- END JAVASCRIPTS -->

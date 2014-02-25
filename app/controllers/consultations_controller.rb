@@ -29,6 +29,10 @@ class ConsultationsController < ApplicationController
     end
   end
 
+  def index
+
+  end
+
   private
   def consultation_params
     params.require(:consultation).permit(:date, :client_id, :practitioner_id, :consultation_type_id)
