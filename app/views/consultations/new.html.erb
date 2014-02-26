@@ -19,8 +19,8 @@
 
         <%= f.label :consultation_type %>
         <%= f.collection_select(:consultation_type_id, ConsultationType.all, :id, :name, :prompt => 'Please Select a Practitioner') %>
+        <%= f.submit "Create new consultation", class: 'btn btn-large btn-primary' %>
 
-        <%= f.submit "Create new consultation", class: "btn btn-large btn-primary" %>
     <% end %>
   </div>
 </div>

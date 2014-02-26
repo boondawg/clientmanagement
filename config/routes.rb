@@ -2,6 +2,13 @@ ClientManagement::Application.routes.draw do
 
   resources :transactions
   resources :consultations
+=begin
+  resources :consultations do
+    collection do
+     put :resize
+    end
+  end
+=end
   resources :consultation_types
   resources :practitioners
   resources :clients

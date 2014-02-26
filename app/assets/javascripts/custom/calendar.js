@@ -167,7 +167,10 @@ var Calendar = function () {
                         backgroundColor: App.getLayoutColorCode('yellow'),
                         url: 'http://google.com/',
                     }
-                ]*/
+                ]*/,
+                eventResize: function(event, dayDelta, minuteDelta, revertFunc){
+                    updateEvent(event);
+                }
             });
 
         }
@@ -175,3 +178,24 @@ var Calendar = function () {
     };
 
 }();
+
+function updateEvent(the_consultation) {
+    $.ajax({
+        type: 'put',
+        dataType: 'JSON',
+        url: "/consultations/" + the_consultation.id,
+        headers: {
+            'X-Transaction': 'put',
+            'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+        },
+        data:
+        {
+            consultation: {
+                start_date_time: "" + the_consultation.start,
+                end_date_time: "" + the_consultation.end
+            }
+        },
+        timeFormat: 'h:mm t{ - h:mm t} ',
+        complete:  function (reponse) { }
+    });
+};

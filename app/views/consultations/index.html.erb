@@ -1,9 +1,10 @@
 <% content_for :page_css do -%>
-    <%= stylesheet_link_tag 'fullcalendar' %>
+    <%= stylesheet_link_tag 'fullcalendar', media: "all",
+                            "data-turbolinks-track" => true %>
 <% end -%>
 <% content_for :page_js do -%>
-    <%= javascript_include_tag 'fullcalendar.min' %>
-    <%= javascript_include_tag 'custom/calendar' %>
+    <%= javascript_include_tag 'fullcalendar.min' , "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'custom/calendar',"data-turbolinks-track" => true %>
 <% end -%>
 <% content_for :custom_init do -%>
    Calendar.init();

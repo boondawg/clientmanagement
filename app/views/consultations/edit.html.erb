@@ -12,7 +12,7 @@
         <%= f.datetime_select :end_date_time %>
 
         <%= f.label :client %>
-        <%= f.collection_select(:client_id, Client.all, :id, :name, :prompt => 'Please Select a Client') %>
+        <%= f.collection_select(:client_id, Client.all, :id, :full_name, :prompt => 'Please Select a Client') %>
 
         <%= f.label :practitioner %>
         <%= f.collection_select(:practitioner_id, Practitioner.all, :id, :name, :prompt => 'Please Select a Practitioner') %>
