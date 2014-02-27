@@ -1,13 +1,29 @@
 <% content_for :page_css do -%>
-    <%= stylesheet_link_tag 'fullcalendar', media: "all",
+    <%= stylesheet_link_tag 'fullcalendar', media: "all", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag 'datetimepicker', media: "all",
                             "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag 'select2', media: "all", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag 'select2-metronic', media: "all", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag 'multi-select', media: "all", "data-turbolinks-track" => true %>
+
 <% end -%>
 <% content_for :page_js do -%>
     <%= javascript_include_tag 'fullcalendar.min' , "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'bootstrap2-typeahead.min' , "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'bootstrap-datetimepicker.min' , "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'bootstrap-select.min' , "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'select2.min',"data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'jquery.multi-select',"data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'custom/components-dropdowns' , "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'custom/components-pickers' , "data-turbolinks-track" => true %>
     <%= javascript_include_tag 'custom/calendar',"data-turbolinks-track" => true %>
+
 <% end -%>
 <% content_for :custom_init do -%>
    Calendar.init();
+    $('#basic').on('shown.bs.modal', function () {
+    ComponentsPickers.init();
+    });
 <% end -%>
 <div class="portlet box blue calendar">
   <div class="portlet-title">
@@ -43,4 +59,13 @@
     </div>
     <!-- END CALENDAR PORTLET-->
   </div>
+</div>
+<div class="modal fade in" id="basic" tabindex="-1" role="basic" aria-hidden="false" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
 </div>

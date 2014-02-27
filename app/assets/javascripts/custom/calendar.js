@@ -124,52 +124,15 @@ var Calendar = function () {
                         $(this).remove();
                     }
                 },
-                events: '/consultations'
-                    /*[{
-                        title: 'All Day Event',                        
-                        start: new Date(y, m, 1),
-                        backgroundColor: App.getLayoutColorCode('yellow')
-                    }, {
-                        title: 'Long Event',
-                        start: new Date(y, m, d - 5),
-                        end: new Date(y, m, d - 2),
-                        backgroundColor: App.getLayoutColorCode('green')
-                    }, {
-                        title: 'Repeating Event',
-                        start: new Date(y, m, d - 3, 16, 0),
-                        allDay: false,
-                        backgroundColor: App.getLayoutColorCode('red')
-                    }, {
-                        title: 'Repeating Event',
-                        start: new Date(y, m, d + 4, 16, 0),
-                        allDay: false,
-                        backgroundColor: App.getLayoutColorCode('green')
-                    }, {
-                        title: 'Meeting',
-                        start: new Date(y, m, d, 10, 30),
-                        allDay: false,
-                    }, {
-                        title: 'Lunch',
-                        start: new Date(y, m, d, 12, 0),
-                        end: new Date(y, m, d, 14, 0),
-                        backgroundColor: App.getLayoutColorCode('grey'),
-                        allDay: false,
-                    }, {
-                        title: 'Birthday Party',
-                        start: new Date(y, m, d + 1, 19, 0),
-                        end: new Date(y, m, d + 1, 22, 30),
-                        backgroundColor: App.getLayoutColorCode('purple'),
-                        allDay: false,
-                    }, {
-                        title: 'Click for Google',
-                        start: new Date(y, m, 28),
-                        end: new Date(y, m, 29),
-                        backgroundColor: App.getLayoutColorCode('yellow'),
-                        url: 'http://google.com/',
-                    }
-                ]*/,
-                eventResize: function(event, dayDelta, minuteDelta, revertFunc){
+                events: '/consultations',
+
+                eventDrop: function(event, dayDelta, minuteDelta, allDay, revertFunc){
                     updateEvent(event);
+                    },
+                               eventResize: function(event, dayDelta, minuteDelta, revertFunc){
+                    updateEvent(event);},
+                dayClick: function(date, allDay, jsEvent, view) {
+                    dayClicker(date, allDay, jsEvent, view);
                 }
             });
 
@@ -178,6 +141,25 @@ var Calendar = function () {
     };
 
 }();
+
+function dayClicker(date, allDay, jsEvent, view) {
+    $("#basic").modal({
+        remote:'/consultations/new'} );
+
+   /* if (allDay) {
+        alert('Clicked on the entire day: ' + date);
+    }else{
+        alert('Clicked on the slot: ' + date);
+    }
+
+    alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
+
+    alert('Current view: ' + view.name);
+
+    // change the day's background color just for fun
+    $(this).css('background-color', 'red');*/
+
+};
 
 function updateEvent(the_consultation) {
     $.ajax({

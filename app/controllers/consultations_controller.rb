@@ -1,6 +1,7 @@
 class ConsultationsController < ApplicationController
   def new
     @consultation = Consultation.new
+    render :layout => false
   end
 
   def edit
@@ -18,7 +19,7 @@ class ConsultationsController < ApplicationController
     @consultation = Consultation.find(params[:id])
       respond_to do |format|
         if @consultation.update_attributes(consultation_params)
-          format.html { redirect_to(consultations_url, :notice => 'Consultation was successfully updated.') }
+          format.html {redirect_to(consultations_url, :notice => 'Consultation was successfully updated.') }
           format.js { head :ok}
         else
           format.html { render 'edit' }
