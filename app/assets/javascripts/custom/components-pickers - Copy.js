@@ -7,7 +7,7 @@ var ComponentsPickers = function () {
                 rtl: App.isRTL(),
                 autoclose: true
             });
-          //  $('body').removeClass("modal-open"); // fix bug when inline picker is used in modal
+            $('body').removeClass("modal-open"); // fix bug when inline picker is used in modal
         }
     }
 
@@ -156,7 +156,7 @@ var ComponentsPickers = function () {
             todayBtn: true
         });
 
-        //$('body').removeClass("modal-open"); // fix bug when inline picker is used in modal
+        $('body').removeClass("modal-open"); // fix bug when inline picker is used in modal
     }
 
     var handleClockfaceTimePickers = function () {

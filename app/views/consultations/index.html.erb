@@ -14,7 +14,6 @@
     <%= javascript_include_tag 'bootstrap-select.min' , "data-turbolinks-track" => true %>
     <%= javascript_include_tag 'select2.min',"data-turbolinks-track" => true %>
     <%= javascript_include_tag 'jquery.multi-select',"data-turbolinks-track" => true %>
-    <%= javascript_include_tag 'custom/components-dropdowns' , "data-turbolinks-track" => true %>
     <%= javascript_include_tag 'custom/components-pickers' , "data-turbolinks-track" => true %>
     <%= javascript_include_tag 'custom/calendar',"data-turbolinks-track" => true %>
 
@@ -22,8 +21,26 @@
 <% content_for :custom_init do -%>
    Calendar.init();
     $('#basic').on('shown.bs.modal', function () {
+
+    alert($('#basic').data('start_date_time'))
+   
     ComponentsPickers.init();
+    App.setModalDropdowns();
     });
+    //fix modal force focus
+    $.fn.modal.Constructor.prototype.enforceFocus = function () {
+    var that = this;
+    $(document).on('focusin.modal', function (e) {
+    if ($(e.target).hasClass('select2-input')) {
+    return true;
+    }
+
+    if (that.$element[0] !== e.target && !that.$element.has(e.target).length) {
+    that.$element.focus();
+    }
+    });
+    };
+
 <% end -%>
 <div class="portlet box blue calendar">
   <div class="portlet-title">

@@ -143,8 +143,11 @@ var Calendar = function () {
 }();
 
 function dayClicker(date, allDay, jsEvent, view) {
-    $("#basic").modal({
-        remote:'/consultations/new'} );
+    $("#basic").data('start_date_time', date)
+    $("#basic").modal({ data:{
+        start_date_time: "" + date
+        },
+        remote:'/consultations/new'}).data;
 
    /* if (allDay) {
         alert('Clicked on the entire day: ' + date);

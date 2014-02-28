@@ -1050,6 +1050,10 @@ var App = function () {
             handleDropdownHover() // handles dropdown hover       
         },
 
+        setModalDropdowns: function () {
+            handleSelect2();
+        },
+
         //public function to fix the sidebar and content height accordingly
         fixContentHeight: function () {
             handleSidebarAndContentHeight();
