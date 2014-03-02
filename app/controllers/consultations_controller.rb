@@ -6,10 +6,12 @@ class ConsultationsController < ApplicationController
 
   def edit
     @consultation= Consultation.find(params[:id])
+    render :layout => false
   end
 
   def show
     @consultation = Consultation.find(params[:id])
+    render :layout => false
   end
 
 # PUT /events/1

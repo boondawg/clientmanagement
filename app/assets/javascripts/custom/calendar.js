@@ -99,6 +99,7 @@ var Calendar = function () {
             $('#calendar').fullCalendar('destroy'); // destroy the calendar
             $('#calendar').fullCalendar({ //re-initialize the calendar
                 header: h,
+                defaultView: 'agendaWeek',
                 slotMinutes: 15,
                 editable: true,
                 droppable: true, // this allows things to be dropped onto the calendar !!!
@@ -125,12 +126,25 @@ var Calendar = function () {
                     }
                 },
                 events: '/consultations',
+                eventClick: function(calEvent, jsEvent, view) {
+                    $("#show-m").modal({
+                        remote:calEvent.url });
+                    return false;
+                },
 
                 eventDrop: function(event, dayDelta, minuteDelta, allDay, revertFunc){
-                    updateEvent(event);
-                    },
-                               eventResize: function(event, dayDelta, minuteDelta, revertFunc){
-                    updateEvent(event);},
+                    if (!isOverlapping(event))
+                        updateEvent(event);
+                    else
+                        revertFunc();
+                },
+                eventResize: function(event, dayDelta, minuteDelta, revertFunc){
+                    if (!isOverlapping(event))
+                        updateEvent(event);
+                    else
+                        revertFunc();
+                },
+
                 dayClick: function(date, allDay, jsEvent, view) {
                     dayClicker(date, allDay, jsEvent, view);
                 }
@@ -144,10 +158,8 @@ var Calendar = function () {
 
 function dayClicker(date, allDay, jsEvent, view) {
     $("#basic").data('start_date_time', date)
-    $("#basic").modal({ data:{
-        start_date_time: "" + date
-        },
-        remote:'/consultations/new'}).data;
+    $("#basic").modal({
+        remote:'/consultations/new'});
 
    /* if (allDay) {
         alert('Clicked on the entire day: ' + date);
@@ -184,3 +196,14 @@ function updateEvent(the_consultation) {
         complete:  function (reponse) { }
     });
 };
+
+function isOverlapping(event){
+    // "calendar" on line below should ref the element on which fc has been called
+    var array = $('#calendar').fullCalendar('clientEvents');
+    for(i in array){
+        if ((event.end >= array[i].start && event.start <= array[i].end) && event != array[i]){
+            return true;
+        }
+    }
+    return false;
+}

@@ -1,28 +1,74 @@
-<% provide(:title, "Edit Consultation") %>
-<h1>Update Client</h1>
-
-<div class="row">
-  <div class="span6 offset3">
-    <%= form_for(@consultation) do |f| %>
-
-        <%= f.label :start_date_time %>
-        <%= f.datetime_select :start_date_time %>
-
-        <%= f.label :end_date_time %>
-        <%= f.datetime_select :end_date_time %>
-
-        <%= f.label :client %>
-        <%= f.collection_select(:client_id, Client.all, :id, :full_name, :prompt => 'Please Select a Client') %>
-
-        <%= f.label :practitioner %>
-        <%= f.collection_select(:practitioner_id, Practitioner.all, :id, :name, :prompt => 'Please Select a Practitioner') %>
-
-        <%= f.label :consultation_type %>
-        <%= f.collection_select(:consultation_type_id, ConsultationType.all, :id, :name, :prompt => 'Please Select a Consultation Type') %>
-
-        <%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
-    <% end %>
-
-
-  </div>
+<div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+  <h4 class="modal-title">Create Consultation</h4>
 </div>
+<%= form_for @consultation, :html => {:class => "form-horizontal"} do |f|%>
+    <div class="modal-body">
+
+
+
+      <!-- BEGIN FORM-->
+
+      <div class="form-body">
+        <div class="form-group">
+          <%= f.label :start_date_time, class:'col-md-3 control-label'%>
+          <div class="col-md-4">
+            <div class="input-group date form_datetime  input-large" id="start-date-picker">
+              <%= f.text_field :start_date_time, class:'form-control',:readonly => true%>
+
+              <span class="input-group-btn">
+                    <button class="btn default date-reset" type="button"><i class="fa fa-times"></i></button>
+                </span>
+                <span class="input-group-btn">
+                    <button class="btn default date-set" type="button"><i class="fa fa-calendar"></i></button>
+                </span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <%= f.label :end_date_time, class:'col-md-3 control-label'%>
+          <div class="col-md-4">
+            <div class="input-group date form_datetime input-large">
+              <%= f.text_field :end_date_time, class:'form-control', :readonly => true %>
+              <span class="input-group-btn">
+                    <button class="btn default date-reset" type="button"><i class="fa fa-times"></i></button>
+                </span>
+                <span class="input-group-btn">
+                    <button class="btn default date-set" type="button"><i class="fa fa-calendar"></i></button>
+                </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-3 control-label">Client</label>
+          <div class="col-md-4">
+            <%= f.collection_select(:client_id, Client.all, :id, :full_name, {prompt:''}, {class:'form-control input-large select2me', "data-placeholder" =>'Select Client'})%>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Practitioner</label>
+          <div class="col-md-4">
+            <%= f.collection_select(:practitioner_id, Practitioner.all, :id, :full_name, {prompt:''}, {class:'form-control input-large select2me', "data-placeholder" =>'Select Practitioner'})%>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Consultation Type</label>
+          <div class="col-md-4">
+            <%= f.collection_select(:consultation_type_id, ConsultationType.all, :id, :name, {prompt:''}, {class:'form-control input-large select2me', 'data-placeholder' =>'Select Consultation Type'})%>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- END FORM-->
+
+
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn default" data-dismiss="modal">Close</button>
+      <%= f.submit "Create new Consultation", class: "btn blue" %>
+
+    </div>
+<% end %>

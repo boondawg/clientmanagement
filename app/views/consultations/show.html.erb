@@ -1,14 +1,53 @@
-<% provide(:title, '') %>
-<div class="row">
-  <aside class="span4">
-    <section>
-      <h1>
-        <%= @consultation.start_date_time %>
-        <%= @consultation.end_date_time %>
-        <%= @consultation.client.full_name %>
-        <%= @consultation.practitioner.name %>
-        <%= @consultation.consultation_type.name %>
-      </h1>
-    </section>
-  </aside>
+<div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+  <h4 class="modal-title">View Consultation</h4>
 </div>
+    <div class="modal-body">
+      <!-- BEGIN FORM-->
+      <form action="#" class="form-horizontal">
+      <div class="form-body">
+        <div class="form-group">
+          <label class="col-md-3 control-label">Start Timme</label>
+          <div class="col-md-4">
+              <p class="form-control-static">
+                <%= @consultation.start_date_time.to_formatted_s(:short) %>
+              </p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Client</label>
+          <div class="col-md-4">
+            <p class="form-control-static">
+              <%= @consultation.client.full_name %>
+            </p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Practitioner</label>
+          <div class="col-md-4">
+            <p class="form-control-static">
+              <%= @consultation.practitioner.full_name %>
+            </p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Consultation Type</label>
+          <div class="col-md-4">
+            <p class="form-control-static">
+              <%= @consultation.consultation_type.name %>
+            </p>
+          </div>
+        </div>
+      </div>
+      </form>
+
+      <!-- END FORM-->
+
+
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn default" data-dismiss="modal">Close</button>
+      <a data-toggle="modal" id="edit-btn" href="<%=edit_consultation_path(@consultation.id) %>" data-target="#edit-m">Click me</a>
+      <button type="button" id="edit" class="btn green">Edit</button>
+    </div>
