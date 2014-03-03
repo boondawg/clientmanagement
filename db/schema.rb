@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140228002047) do
+ActiveRecord::Schema.define(version: 20140303040834) do
 
   create_table "clients", force: true do |t|
     t.string   "first_name"
@@ -45,6 +45,25 @@ ActiveRecord::Schema.define(version: 20140228002047) do
   add_index "consultations", ["client_id"], name: "index_consultations_on_client_id"
   add_index "consultations", ["consultation_type_id"], name: "index_consultations_on_consultation_type_id"
   add_index "consultations", ["practitioner_id"], name: "index_consultations_on_practitioner_id"
+
+  create_table "note_template_fields", force: true do |t|
+    t.integer  "note_template_id"
+    t.integer  "order"
+    t.string   "name"
+    t.string   "type"
+    t.string   "defaultValue"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "note_template_fields", ["note_template_id"], name: "index_note_template_fields_on_note_template_id"
+
+  create_table "note_templates", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "current"
+  end
 
   create_table "practitioners", force: true do |t|
     t.string   "first_name"

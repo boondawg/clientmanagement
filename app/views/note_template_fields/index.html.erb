@@ -1,0 +1,35 @@
+<h1>Listing note_template_fields</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Note template</th>
+      <th>Order</th>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Defaultvalue</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @note_template_fields.each do |note_template_field| %>
+      <tr>
+        <td><%= note_template_field.note_template %></td>
+        <td><%= note_template_field.order %></td>
+        <td><%= note_template_field.name %></td>
+        <td><%= note_template_field.type %></td>
+        <td><%= note_template_field.defaultValue %></td>
+        <td><%= link_to 'Show', note_template_field %></td>
+        <td><%= link_to 'Edit', edit_note_template_field_path(note_template_field) %></td>
+        <td><%= link_to 'Destroy', note_template_field, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Note template field', new_note_template_field_path %>

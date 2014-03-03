@@ -201,7 +201,7 @@ function isOverlapping(event){
     // "calendar" on line below should ref the element on which fc has been called
     var array = $('#calendar').fullCalendar('clientEvents');
     for(i in array){
-        if ((event.end >= array[i].start && event.start <= array[i].end) && event != array[i]){
+        if ((event.end > array[i].start && event.start < array[i].end) && event != array[i]){
             return true;
         }
     }

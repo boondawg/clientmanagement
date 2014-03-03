@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Note template:</strong>
+  <%= @note_template_field.note_template %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @note_template_field.order %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @note_template_field.name %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @note_template_field.type %>
+</p>
+
+<p>
+  <strong>Defaultvalue:</strong>
+  <%= @note_template_field.defaultValue %>
+</p>
+
+<%= link_to 'Edit', edit_note_template_field_path(@note_template_field) %> |
+<%= link_to 'Back', note_template_fields_path %>

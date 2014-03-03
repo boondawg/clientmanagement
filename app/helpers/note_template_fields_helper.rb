@@ -1,0 +1,2 @@
+module NoteTemplateFieldsHelper
+end

@@ -1,5 +1,7 @@
 ClientManagement::Application.routes.draw do
 
+  resources :note_template_fields
+
   resources :transactions
   resources :consultations
 =begin
