@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>[note:</strong>
+  <%= @note_field.[note %>
+</p>
+
+<p>
+  <strong>Note template field:</strong>
+  <%= @note_field.note_template_field %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @note_field.value %>
+</p>
+
+<%= link_to 'Edit', edit_note_field_path(@note_field) %> |
+<%= link_to 'Back', note_fields_path %>

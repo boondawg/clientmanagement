@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  consultation_id: 
+  note_template_id: 
+  client_id: 
+
+two:
+  consultation_id: 
+  note_template_id: 
+  client_id: 

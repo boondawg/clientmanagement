@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140303040834) do
+ActiveRecord::Schema.define(version: 20140304045319) do
 
   create_table "clients", force: true do |t|
     t.string   "first_name"
@@ -46,6 +46,17 @@ ActiveRecord::Schema.define(version: 20140303040834) do
   add_index "consultations", ["consultation_type_id"], name: "index_consultations_on_consultation_type_id"
   add_index "consultations", ["practitioner_id"], name: "index_consultations_on_practitioner_id"
 
+  create_table "note_fields", force: true do |t|
+    t.integer  "note_id"
+    t.integer  "note_template_field_id"
+    t.string   "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "note_fields", ["note_id"], name: "index_note_fields_on_note_id"
+  add_index "note_fields", ["note_template_field_id"], name: "index_note_fields_on_note_template_field_id"
+
   create_table "note_template_fields", force: true do |t|
     t.integer  "note_template_id"
     t.integer  "order"
@@ -64,6 +75,18 @@ ActiveRecord::Schema.define(version: 20140303040834) do
     t.datetime "updated_at"
     t.boolean  "current"
   end
+
+  create_table "notes", force: true do |t|
+    t.integer  "consultation_id"
+    t.integer  "client_id"
+    t.integer  "note_template_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "notes", ["client_id"], name: "index_notes_on_client_id"
+  add_index "notes", ["consultation_id"], name: "index_notes_on_consultation_id"
+  add_index "notes", ["note_template_id"], name: "index_notes_on_note_template_id"
 
   create_table "practitioners", force: true do |t|
     t.string   "first_name"

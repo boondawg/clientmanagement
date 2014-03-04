@@ -1,16 +1,14 @@
 ClientManagement::Application.routes.draw do
 
+  resources :note_fields
+
   resources :note_template_fields
+  resources :notes
+  resources :note_templates
 
   resources :transactions
   resources :consultations
-=begin
-  resources :consultations do
-    collection do
-     put :resize
-    end
-  end
-=end
+
   resources :consultation_types
   resources :practitioners
   resources :clients

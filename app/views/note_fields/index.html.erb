@@ -1,0 +1,31 @@
+<h1>Listing note_fields</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>[note</th>
+      <th>Note template field</th>
+      <th>Value</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @note_fields.each do |note_field| %>
+      <tr>
+        <td><%= note_field.[note %></td>
+        <td><%= note_field.note_template_field %></td>
+        <td><%= note_field.value %></td>
+        <td><%= link_to 'Show', note_field %></td>
+        <td><%= link_to 'Edit', edit_note_field_path(note_field) %></td>
+        <td><%= link_to 'Destroy', note_field, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Note field', new_note_field_path %>
