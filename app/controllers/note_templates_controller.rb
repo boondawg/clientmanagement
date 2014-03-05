@@ -69,6 +69,6 @@ class NoteTemplatesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def note_template_params
-      params.require(:note_template).permit(:name)
+      params.require(:note_template).permit(:name, :note_template_id, :order, :status, :type, :default_value )
     end
 end
