@@ -1,21 +1,51 @@
 <% provide(:title, 'Create Note Template') %>
-<h1>Create Consultation Type</h1>
-
-<div class="row">
-  <div class="span6 offset3">
-    <%= form_for(@note_template) do |f| %>
-
-        <%= f.label :name %>
-        <%= f.text_field :name %>
-        <%= f.fields_for :note_template_field do |n| %>
-        <%= n.label :name%>
-            <%= n.text_field :name %>
-
-        <%end%>
 
 
+<div class="portlet box green">
+  <div class="portlet-title">
+    <div class="caption">
+      <i class="fa fa-reorder"></i>Create Note Template
+    </div>
+   </div>
+  <div class="portlet-body form">
+    <!-- BEGIN FORM-->
+    <%= nested_form_for @note_template, :html => {:class => "form-horizontal"} do |f| %>
+        <div class="form-body">
+          <div class="form-group">
+            <%= f.label 'Template Name', :class => "control-label col-md-3" %>
+            <div class="col-md-4">
+              <%= f.text_field :name , :class => "form-control"%>
+              <span class="help-block">
+															 A block of help text.
+														</span>
+            </div>
+          </div>
+          Start here
+          <%= f.fields_for :note_template_fields do |n| %>
+              <div class="form-group">
+                <%= n.label 'Field Name', :class => "control-label col-md-3" %>
+                <div class="col-md-4">
+                  <%= n.text_field :name , :class => "form-control"%>
+                </div>
+                <%= n.link_to_remove '', :class => 'fa fa-minus btn red' %>
+              </div>
+          <%end%>
 
-        <%= f.submit 'Create new note template', class: 'btn blue' %>
+          <div class="form-group">
+            <div class="col-md-4">
+            </div>
+            I hope stuff isnt added here
+            <%= f.link_to_add '', :note_template_fields, :class => 'fa fa-plus btn red' %>
+          </div>
+
+        </div>
+        <div class="form-actions fluid">
+          <div class="col-md-offset-3 col-md-9">
+            <%= f.submit 'Create new note template', class: 'btn blue' %>
+            <button type="button" class="btn default">Cancel</button>
+          </div>
+        </div>
     <% end %>
+    <!-- END FORM-->
   </div>
 </div>

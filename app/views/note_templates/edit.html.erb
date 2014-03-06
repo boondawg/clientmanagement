@@ -1,6 +1,22 @@
-<h1>Editing note_template</h1>
+<% provide(:title, 'Edit Note Template') %>
+<h1>Edit Note Template</h1>
 
-<%= render 'form' %>
+<div class="row">
+  <div class="span6 offset3">
+    <%= nested_form_for @note_template do |f| %>
 
-<%= link_to 'Show', @note_template %> |
-<%= link_to 'Back', note_templates_path %>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+        <%= f.fields_for :note_template_fields do |n| %>
+            <%= n.label :name%>
+            <%= n.text_field :name %>
+            <%= n.link_to_remove 'Remove this Task' %>
+        <%end%>
+        <p><%= f.link_to_add 'Add a field', :note_template_fields%></p>
+
+
+
+        <%= f.submit 'Edit note template', class: 'btn blue' %>
+    <% end %>
+  </div>
+</div>

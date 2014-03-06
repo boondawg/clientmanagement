@@ -26,4 +26,5 @@
 //= require jquery.uniform.min.js
 //= require turbolinks
 //= require core/app
+//= require jquery_nested_form
 // require_tree .
