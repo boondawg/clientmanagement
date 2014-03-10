@@ -1,22 +1,52 @@
-<% provide(:title, 'Edit Note Template') %>
-<h1>Edit Note Template</h1>
+<% provide(:title, 'Update Note Template') %>
+<% content_for :page_js do -%>
 
-<div class="row">
-  <div class="span6 offset3">
-    <%= nested_form_for @note_template do |f| %>
+    <%= javascript_include_tag 'note_template',"data-turbolinks-track" => true %>
 
-        <%= f.label :name %>
-        <%= f.text_field :name %>
-        <%= f.fields_for :note_template_fields do |n| %>
-            <%= n.label :name%>
-            <%= n.text_field :name %>
-            <%= n.link_to_remove 'Remove this Task' %>
-        <%end%>
-        <p><%= f.link_to_add 'Add a field', :note_template_fields%></p>
+<% end -%>
 
+<div class="portlet box green">
+  <div class="portlet-title">
+    <div class="caption">
+      <i class="fa fa-reorder"></i>Update Note Template
+    </div>
+  </div>
+  <div class="portlet-body form">
+    <!-- BEGIN FORM-->
+    <%= nested_form_for @note_template, :id =>'template_form', :html => {:class => "form-horizontal"} do |f| %>
+        <div class="form-body">
+          <div class="form-group">
+            <%= f.label 'Template Name', :class => "control-label col-md-3" %>
+            <div class="col-md-4">
+              <%= f.text_field :name , :class => "form-control"%>
+              <input name="ordervalue" type="hidden" value="1">
 
-
-        <%= f.submit 'Edit note template', class: 'btn blue' %>
+            </div>
+          </div>
+          <div id="sortable">
+            <%= f.fields_for :note_template_fields, :wrapper => false do |n| %>
+                <div class="form-group">
+                  <%= n.label 'Field Name', :class => "control-label col-md-3" %>
+                  <div class="col-md-4">
+                    <%= n.text_field :name , :class => "form-control"%>
+                  </div>
+                  <div class="col-md-1">
+                    <%=n.label :order %>
+                    <%=n.text_field :order %>
+                  </div>
+                  <%= n.link_to_remove '', :class => 'fa fa-minus btn red' %>
+                </div>
+            <%end%>
+          </div>
+          <%= f.link_to_add '', :note_template_fields,:data => { :target => '#sortable' }, :class => 'fa fa-plus btn red' %>
+        </div>
+        <div class="form-actions fluid">
+          <div class="col-md-offset-3 col-md-9">
+            <%= f.submit 'update note template', class: 'btn blue' %>
+            <button type="button" class="btn default">Cancel</button>
+          </div>
+        </div>
     <% end %>
+    <!-- END FORM-->
   </div>
 </div>

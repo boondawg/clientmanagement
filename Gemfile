@@ -23,6 +23,7 @@ gem 'font-awesome-rails'
 gem 'jquery-migrate-rails', '1.2.1'
 gem 'jquery-ui-rails'
 gem 'jquery-slimscroll-rails'
+gem 'jquery-sortable-rails'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby

@@ -1,5 +1,9 @@
 <% provide(:title, 'Create Note Template') %>
+<% content_for :page_js do -%>
 
+    <%= javascript_include_tag 'note_template',"data-turbolinks-track" => true %>
+
+<% end -%>
 
 <div class="portlet box green">
   <div class="portlet-title">
@@ -9,35 +13,32 @@
    </div>
   <div class="portlet-body form">
     <!-- BEGIN FORM-->
-    <%= nested_form_for @note_template, :html => {:class => "form-horizontal"} do |f| %>
+    <%= nested_form_for @note_template, :id =>'template_form', :html => {:class => "form-horizontal"} do |f| %>
         <div class="form-body">
           <div class="form-group">
             <%= f.label 'Template Name', :class => "control-label col-md-3" %>
             <div class="col-md-4">
               <%= f.text_field :name , :class => "form-control"%>
-              <span class="help-block">
-															 A block of help text.
-														</span>
+
             </div>
           </div>
-          Start here
+          <div id="sortable">
           <%= f.fields_for :note_template_fields do |n| %>
               <div class="form-group">
                 <%= n.label 'Field Name', :class => "control-label col-md-3" %>
                 <div class="col-md-4">
                   <%= n.text_field :name , :class => "form-control"%>
                 </div>
+                <div class="col-md-1">
+                  <%=n.label :order %>
+                  <%=n.text_field :order, :class => "form-control"%>
+                </div>
                 <%= n.link_to_remove '', :class => 'fa fa-minus btn red' %>
               </div>
           <%end%>
 
-          <div class="form-group">
-            <div class="col-md-4">
-            </div>
-            I hope stuff isnt added here
-            <%= f.link_to_add '', :note_template_fields, :class => 'fa fa-plus btn red' %>
+          <%= f.link_to_add '', :note_template_fields, :data => { :target => "#sortable" }, :class => 'fa fa-plus btn red' %>
           </div>
-
         </div>
         <div class="form-actions fluid">
           <div class="col-md-offset-3 col-md-9">
