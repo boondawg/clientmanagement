@@ -25,7 +25,7 @@
           </div>
           <div id="sortable">
             <%= f.fields_for :note_template_fields, :wrapper => false do |n| %>
-                <div class="form-group">
+                <div class="<%="field_ #{n.object.id}" %>">
                   <%= n.label 'Field Name', :class => "control-label col-md-3" %>
                   <div class="col-md-4">
                     <%= n.text_field :name , :class => "form-control"%>
@@ -33,6 +33,7 @@
                   <div class="col-md-1">
                     <%=n.label :order %>
                     <%=n.text_field :order %>
+                    <%= n.hidden_field :id %>
                   </div>
                   <%= n.link_to_remove '', :class => 'fa fa-minus btn red' %>
                 </div>
