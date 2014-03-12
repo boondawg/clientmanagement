@@ -18,7 +18,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 gem 'nested_form'
-
+gem "cocoon"
+gem "slim"
 gem 'font-awesome-rails'
 gem 'jquery-migrate-rails', '1.2.1'
 gem 'jquery-ui-rails'

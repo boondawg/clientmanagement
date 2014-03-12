@@ -13,40 +13,7 @@
    </div>
   <div class="portlet-body form">
     <!-- BEGIN FORM-->
-    <%= nested_form_for @note_template, :id =>'template_form', :html => {:class => "form-horizontal"} do |f| %>
-        <div class="form-body">
-          <div class="form-group">
-            <%= f.label 'Template Name', :class => "control-label col-md-3" %>
-            <div class="col-md-4">
-              <%= f.text_field :name , :class => "form-control"%>
-
-            </div>
-          </div>
-          <div id="sortable">
-          <%= f.fields_for :note_template_fields do |n| %>
-              <div class="form-group">
-                <%= n.label 'Field Name', :class => "control-label col-md-3" %>
-                <div class="col-md-4">
-                  <%= n.text_field :name , :class => "form-control"%>
-                </div>
-                <div class="col-md-1">
-                  <%=n.label :order %>
-                  <%=n.text_field :order, :class => "form-control"%>
-                </div>
-                <%= n.link_to_remove '', :class => 'fa fa-minus btn red' %>
-              </div>
-          <%end%>
-
-          <%= f.link_to_add '', :note_template_fields, :data => { :target => "#sortable" }, :class => 'fa fa-plus btn red' %>
-          </div>
-        </div>
-        <div class="form-actions fluid">
-          <div class="col-md-offset-3 col-md-9">
-            <%= f.submit 'Create new note template', class: 'btn blue' %>
-            <button type="button" class="btn default">Cancel</button>
-          </div>
-        </div>
-    <% end %>
+    <%= render 'form' %>
     <!-- END FORM-->
   </div>
 </div>
