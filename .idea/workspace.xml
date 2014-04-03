@@ -13,7 +13,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/ClientManagement@note_templates_controller.coverage" NAME="note_templates_controller Coverage Results" MODIFIED="1394445800670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/controllers" MODULE_NAME="ClientManagement" />
-    <SUITE FILE_PATH="coverage/ClientManagement@Development__ClientManagement.coverage" NAME="Development: ClientManagement Coverage Results" MODIFIED="1394589527360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ClientManagement" />
+    <SUITE FILE_PATH="coverage/ClientManagement@Development__ClientManagement.coverage" NAME="Development: ClientManagement Coverage Results" MODIFIED="1396501355040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ClientManagement" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -31,15 +31,29 @@
         <entry file="file://$PROJECT_DIR$/app/views/note_templates/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="18" column="6" selection-start="456" selection-end="456" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="408">
+              <folding>
+                <marker date="1394589453359" expanded="true" signature="203:455" placeholder="..." />
+                <marker date="1394589453359" expanded="true" signature="233:336" placeholder="..." />
+                <marker date="1394589453359" expanded="true" signature="259:326" placeholder="..." />
+                <marker date="1394589453359" expanded="true" signature="370:448" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.slim" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/note_templates/_form.html.slim">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="12" selection-start="508" selection-end="508" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="357">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/note_template_fields/new.html.erb">
+      <file leaf-file-name="_note_template_field_fields.html.slim" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/note_templates/_note_template_field_fields.html.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="34" selection-end="54" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="187">
+            <state line="12" column="0" selection-start="203" selection-end="203" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="306">
               <folding />
             </state>
           </provider>
@@ -48,21 +62,13 @@
       <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/note_templates/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="40" selection-start="1265" selection-end="1265" vertical-scroll-proportion="-12.807693" vertical-offset="228" max-vertical-offset="986">
+            <state line="20" column="6" selection-start="499" selection-end="499" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="442">
               <folding>
-                <marker date="1394583542446" expanded="true" signature="70:167" placeholder="do ... end" />
-                <marker date="1394583542446" expanded="true" signature="496:1911" placeholder="do ... end" />
-                <marker date="1394583542446" expanded="true" signature="953:1479" placeholder="do ... end" />
+                <marker date="1396405470430" expanded="true" signature="203:498" placeholder="..." />
+                <marker date="1396405470430" expanded="true" signature="233:335" placeholder="..." />
+                <marker date="1396405470430" expanded="true" signature="259:326" placeholder="..." />
+                <marker date="1396405470430" expanded="true" signature="369:491" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/notes/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="170">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -70,56 +76,16 @@
       <file leaf-file-name="note_templates_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/note_templates_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="7" selection-start="1466" selection-end="1466" vertical-scroll-proportion="0.0" vertical-offset="586" max-vertical-offset="1360">
+            <state line="43" column="44" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1394">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/consultation_types/new.html.erb">
+      <file leaf-file-name="note_template.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/note_template.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="6" selection-start="429" selection-end="429" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="374">
-              <folding>
-                <marker date="1392849426419" expanded="true" signature="101:428" placeholder="..." />
-                <marker date="1392849426419" expanded="true" signature="131:421" placeholder="..." />
-                <marker date="1392849426419" expanded="true" signature="170:410" placeholder="do ... end" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.slim" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/note_templates/_form.html.slim">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="12" selection-start="321" selection-end="321" vertical-scroll-proportion="0.18775101" vertical-offset="0" max-vertical-offset="996">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_note_template_fields.html.slim" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/note_templates/_note_template_fields.html.slim">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="48" selection-start="166" selection-end="166" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="221">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="30" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="28" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.0" vertical-offset="271" max-vertical-offset="1054">
+            <state line="21" column="0" selection-start="654" selection-end="654" vertical-scroll-proportion="0.5920398" vertical-offset="0" max-vertical-offset="629">
               <folding />
             </state>
           </provider>
@@ -140,7 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/views/consultations/index.html.erb.html" />
         <option value="$PROJECT_DIR$/db/migrate/20140219044953_create_consultations.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140225093615_update_consultation_date_names.rb" />
@@ -181,16 +146,17 @@
         <option value="$PROJECT_DIR$/app/views/note_templates/_note_template_fields.html" />
         <option value="$PROJECT_DIR$/app/helpers/note_templates_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/note_template_fields/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/note_templates_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/note_template.js" />
-        <option value="$PROJECT_DIR$/app/views/note_templates/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/note_templates/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/note_templates/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/note_templates/new.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/note_templates/_fields.html.slim" />
+        <option value="$PROJECT_DIR$/app/views/note_templates/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/note_templates/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/note_templates/_note_template_field_fields.html.slim" />
         <option value="$PROJECT_DIR$/app/views/note_templates/_form.html.slim" />
+        <option value="$PROJECT_DIR$/app/controllers/note_templates_controller.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/note_template.js" />
       </list>
     </option>
   </component>
@@ -202,10 +168,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1170" />
+    <option name="width" value="960" />
+    <option name="height" value="1152" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -233,6 +197,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -387,72 +353,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="note_template_fields" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClientManagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClientManagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="consultations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClientManagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClientManagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clients" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClientManagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClientManagement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -503,6 +403,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ClientManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ClientManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -531,8 +449,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -754,20 +670,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1170" extended-state="6" />
+    <frame x="0" y="0" width="960" height="1152" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32152843" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.321327" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34210527" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20989583" sideWeight="0.49912128" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3998136" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36093417" sideWeight="0.49912128" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3943128" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2858439" sideWeight="0.50087875" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3269461" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34669152" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34597155" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -793,36 +709,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/controllers/note_templates_controller.rb</url>
-          <line>43</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="8" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/clients/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="36" selection-start="2061" selection-end="2061" vertical-scroll-proportion="0.0" vertical-offset="935" max-vertical-offset="2958">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/custom/calendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="39" selection-start="6526" selection-end="6526" vertical-scroll-proportion="0.0" vertical-offset="2634" max-vertical-offset="3638" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/consultations/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="92" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1343">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/consultations/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="32" selection-start="1201" selection-end="1201" vertical-scroll-proportion="-20.923077" vertical-offset="0" max-vertical-offset="969" />
@@ -830,16 +720,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140218004316_create_clients.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="958">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="958" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140228002047_practitioner_fix_names.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
-          <folding />
-        </state>
+        <state line="6" column="0" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140302102142_add_template.rb">
@@ -849,23 +735,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140302103549_create_note_templates.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <folding />
-        </state>
+        <state line="5" column="0" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140303040415_add_fields_to_note_template.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
-          <folding />
-        </state>
+        <state line="6" column="0" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140226071000_change_date_time_to_time.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="981">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="981" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140225103717_rename_practitioner_id.rb">
@@ -875,84 +755,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140225093615_update_consultation_date_names.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="958">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="958" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140223074443_update_dob_to_date_of_birth.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="958">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="958" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140220010754_create_transactions.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="958">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="958" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140219044704_create_consultation_types.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="958">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="958" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140219031333_create_practitioners.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="21" selection-start="109" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <folding />
-        </state>
+        <state line="4" column="21" selection-start="109" selection-end="146" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140219024753_add_details_to_client_table.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="958">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="958" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140222223029_add_first_last_name.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/note_template_fields_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1360" />
+        <state line="6" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140219044953_create_consultations.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="304" selection-end="304" vertical-scroll-proportion="0.33224756" vertical-offset="0" max-vertical-offset="614">
-          <folding />
-        </state>
+        <state line="12" column="0" selection-start="304" selection-end="304" vertical-scroll-proportion="0.33224756" vertical-offset="0" max-vertical-offset="614" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140304044941_note.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="251" selection-end="251" vertical-scroll-proportion="0.26687598" vertical-offset="0" max-vertical-offset="637">
-          <folding />
-        </state>
+        <state line="10" column="0" selection-start="251" selection-end="251" vertical-scroll-proportion="0.26687598" vertical-offset="0" max-vertical-offset="637" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140303040834_create_note_template_fields.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="295" selection-end="295" vertical-scroll-proportion="0.3469388" vertical-offset="0" max-vertical-offset="637">
-          <folding />
-        </state>
+        <state line="13" column="0" selection-start="295" selection-end="295" vertical-scroll-proportion="0.3469388" vertical-offset="0" max-vertical-offset="637" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140304045319_create_note_fields.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="250" selection-end="250" vertical-scroll-proportion="0.29356357" vertical-offset="0" max-vertical-offset="637">
-          <folding />
-        </state>
+        <state line="11" column="0" selection-start="250" selection-end="250" vertical-scroll-proportion="0.29356357" vertical-offset="0" max-vertical-offset="637" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/note_field.rb">
@@ -999,9 +852,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/practitioners_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="55" selection-start="725" selection-end="747" vertical-scroll-proportion="0.0" vertical-offset="26" max-vertical-offset="663">
-          <folding />
-        </state>
+        <state line="30" column="55" selection-start="725" selection-end="747" vertical-scroll-proportion="0.0" vertical-offset="26" max-vertical-offset="663" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/consultation.js">
@@ -1009,16 +860,9 @@
         <state line="0" column="0" selection-start="0" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/consultations/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="30" selection-start="445" selection-end="475" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1335" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/note_template_field.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="27" selection-start="72" selection-end="72" vertical-scroll-proportion="0.019132653" vertical-offset="0" max-vertical-offset="784">
-          <folding />
-        </state>
+        <state line="1" column="27" selection-start="72" selection-end="72" vertical-scroll-proportion="0.019132653" vertical-offset="0" max-vertical-offset="784" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/note_templates_helper.rb">
@@ -1028,30 +872,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/note_template.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="195" selection-end="195" vertical-scroll-proportion="0.114795916" vertical-offset="0" max-vertical-offset="784">
-          <folding />
-        </state>
+        <state line="6" column="0" selection-start="195" selection-end="195" vertical-scroll-proportion="0.114795916" vertical-offset="0" max-vertical-offset="784" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/note_template_fields/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="0.118421055" vertical-offset="0" max-vertical-offset="760">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/note_template.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-          <folding />
-        </state>
+        <state line="6" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="0.118421055" vertical-offset="0" max-vertical-offset="760" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/note_template_fields/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="24" selection-start="267" selection-end="292" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="595">
-          <folding />
-        </state>
+        <state line="18" column="24" selection-start="267" selection-end="292" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="595" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/notes/show.html.erb">
@@ -1061,39 +892,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/note_templates/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="18" selection-start="836" selection-end="836" vertical-scroll-proportion="0.40237468" vertical-offset="86" max-vertical-offset="969">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/note_templates_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="7" selection-start="1466" selection-end="1466" vertical-scroll-proportion="0.0" vertical-offset="586" max-vertical-offset="1360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/note_templates/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="40" selection-start="1265" selection-end="1265" vertical-scroll-proportion="-12.807693" vertical-offset="228" max-vertical-offset="986">
-          <folding>
-            <marker date="1394583542446" expanded="true" signature="70:167" placeholder="do ... end" />
-            <marker date="1394583542446" expanded="true" signature="496:1911" placeholder="do ... end" />
-            <marker date="1394583542446" expanded="true" signature="953:1479" placeholder="do ... end" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/consultation_types/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="6" selection-start="429" selection-end="429" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="374">
+        <state line="16" column="6" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="374">
           <folding>
-            <marker date="1392849426419" expanded="true" signature="101:428" placeholder="..." />
-            <marker date="1392849426419" expanded="true" signature="131:421" placeholder="..." />
-            <marker date="1392849426419" expanded="true" signature="170:410" placeholder="do ... end" />
+            <marker date="1392849426419" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1392849426419" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1392849426419" expanded="true" signature="-1:-1" placeholder="do ... end" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="28" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.0" vertical-offset="271" max-vertical-offset="1054">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1104,16 +917,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/note_templates/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/helpers/note_template_fields_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="6" selection-start="456" selection-end="456" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="408">
+        <state line="2" column="0" selection-start="36" selection-end="36" vertical-scroll-proportion="0.036363635" vertical-offset="0" max-vertical-offset="935">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/views/consultations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="28" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.0" vertical-offset="271" max-vertical-offset="1054">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
           <folding />
         </state>
       </provider>
@@ -1125,16 +938,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/note_templates/_note_template_fields.html.slim">
+    <entry file="file://$PROJECT_DIR$/app/views/consultations/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="48" selection-start="166" selection-end="166" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="221">
+        <state line="8" column="30" selection-start="445" selection-end="475" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="1513">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/note_templates/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="6" selection-start="499" selection-end="499" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="442">
+          <folding>
+            <marker date="1396405479099" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1396405479099" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1396405479099" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1396405479099" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/note_templates/edit.html.erb.bkup">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="43" selection-start="1351" selection-end="1355" vertical-scroll-proportion="-22.037037" vertical-offset="0" max-vertical-offset="986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/note_templates/_note_template_field_fields.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="203" selection-end="203" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/note_templates/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="6" selection-start="499" selection-end="499" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="442">
+          <folding>
+            <marker date="1396405470430" expanded="true" signature="203:498" placeholder="..." />
+            <marker date="1396405470430" expanded="true" signature="233:335" placeholder="..." />
+            <marker date="1396405470430" expanded="true" signature="259:326" placeholder="..." />
+            <marker date="1396405470430" expanded="true" signature="369:491" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/note_template_fields_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/note_templates/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="6" selection-start="456" selection-end="456" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="408">
+          <folding>
+            <marker date="1394589453359" expanded="true" signature="203:455" placeholder="..." />
+            <marker date="1394589453359" expanded="true" signature="233:336" placeholder="..." />
+            <marker date="1394589453359" expanded="true" signature="259:326" placeholder="..." />
+            <marker date="1394589453359" expanded="true" signature="370:448" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/note_templates/_form.html.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="12" selection-start="321" selection-end="321" vertical-scroll-proportion="0.18775101" vertical-offset="0" max-vertical-offset="996">
+        <state line="15" column="12" selection-start="508" selection-end="508" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/note_templates_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="44" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1394">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/note_template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="654" selection-end="654" vertical-scroll-proportion="0.5920398" vertical-offset="0" max-vertical-offset="629">
           <folding />
         </state>
       </provider>

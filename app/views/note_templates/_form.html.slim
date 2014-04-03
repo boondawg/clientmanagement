@@ -1,12 +1,16 @@
 = form_for @note_template do |f|
   .field
+    =f.label :id, as: :hidden
     = f.label :name
     br
     = f.text_field :name
     h3 Fields
-  #note_template_fields
-    = f.fields_for :note_template_fields do |field|
-      = render 'note_template_fields', :f => field
-    .links
-      = link_to_add_association 'add field', f, :note_template
+  #sortable
+    = f.fields_for :note_template_fields, :include_id => false do |field|
+      = render 'note_template_field_fields', :f => field
+
+  .links
+    = link_to_add_association 'add field', f, :note_template_fields, 'data-association-insertion-node' => '#sortable', 'data-association-insertion-method' => 'append'
+    = hidden_field_tag 'orderString'
+
   = f.submit
