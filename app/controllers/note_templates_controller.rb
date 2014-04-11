@@ -67,6 +67,7 @@ class NoteTemplatesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_note_template
       @note_template = NoteTemplate.find(params[:id])
+test='1'
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
