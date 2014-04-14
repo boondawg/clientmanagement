@@ -6,7 +6,7 @@ div id="nested-fields" class="meme"
 
   .field
     = f.label 'Order'
-    = f.text_field :order
-    = hidden_field_tag 'orderString', class:'currentposition'
+    = f.text_field :order, class:'currentposition'
+
   = link_to_remove_association 'Remove field', f, { wrapper_class: 'meme' }
 

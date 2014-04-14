@@ -40,8 +40,6 @@ class NoteTemplatesController < ApplicationController
   # PATCH/PUT /note_templates/1
   # PATCH/PUT /note_templates/1.json
   def update
-    order_hash = params['orderString']
-    order_hash =  Rack::Utils.parse_nested_query(order_hash)
     respond_to do |format|
       if @note_template.update(note_template_params)
         format.html { redirect_to @note_template, notice: 'Note template was successfully updated.' }
