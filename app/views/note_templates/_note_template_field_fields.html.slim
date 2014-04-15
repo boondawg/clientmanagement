@@ -1,12 +1,8 @@
-div id="nested-fields" class="meme"
-  .field
-    = f.label 'Name'
+tr class="fieldWrapper"
+  td
     = f.text_field :name
-
-
-  .field
-    = f.label 'Order'
-    = f.text_field :order, class:'currentposition'
-
-  = link_to_remove_association 'Remove field', f, { wrapper_class: 'meme' }
-
+  td class="hidden-xs"
+    | Server hardware purchase
+  td
+    = link_to_remove_association '', f, {class: 'fa fa-minus btn red', wrapper_class: 'fieldWrapper' }
+    = f.hidden_field :order, class:'currentposition'

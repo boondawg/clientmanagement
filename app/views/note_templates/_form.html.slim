@@ -4,14 +4,20 @@
     = f.label :name
     br
     = f.text_field :name
-    h3 Fields
-  div id='sortable' class='deleter'
-    = f.fields_for :note_template_fields do |field|
-      = render 'note_template_field_fields', :f => field
-
-
+  h3 style='float:left' Fields
+  = link_to_add_association 'Add New Field', f, :note_template_fields, 'data-association-insertion-node' => '#sortable', 'data-association-insertion-method' => 'append'
+  table class="table table-bordered table-advance table-hover"
+    thead
+    tr
+      th
+        |  Field Name
+      th class="hidden-xs"
+        |  Field Type
+      th
+    tbody id='sortable'
+      = f.fields_for :note_template_fields do |field|
+        = render 'note_template_field_fields', :f => field
   .links
-    = link_to_add_association 'add field', f, :note_template_fields, 'data-association-insertion-node' => '#sortable', 'data-association-insertion-method' => 'append'
-
 
   = f.submit
+
