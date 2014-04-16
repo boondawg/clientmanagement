@@ -3,7 +3,7 @@ ClientManagement::Application.routes.draw do
   resources :note_fields
 
   resources :note_template_fields
-  resources :notes
+
   resources :note_templates
 
   resources :transactions
@@ -11,7 +11,9 @@ ClientManagement::Application.routes.draw do
 
   resources :consultation_types
   resources :practitioners
-  resources :clients
+  resources :clients do
+    resources :notes
+  end
   root 'static_pages#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

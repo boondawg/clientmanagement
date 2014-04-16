@@ -1,13 +1,11 @@
-= form_for @note do |f|
+= form_for [@client,@note] do |f|
   .field
 
-    |Client Name
+    |Template
     br
-    = f.collection_select(:client_id, Client.all, :id, :full_name, {prompt:''}, {class:'form-control input-large select2me', "data-placeholder" =>'Select Client'})
-    |Client Name
-    br
-    = f.collection_select(:note_template_id, Note_Template.all, :id, :name, {prompt:''}, {class:'form-control input-large select2me', "data-placeholder" =>'Select Client'})
+    = f.collection_select(:note_template_id, NoteTemplate.all, :id, :name, {prompt:''}, {class:'form-control input-large select2me', "data-placeholder" =>'Select Client'})
 
+    
 
   = f.submit
 

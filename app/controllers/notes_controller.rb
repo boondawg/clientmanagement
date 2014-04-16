@@ -14,7 +14,8 @@ class NotesController < ApplicationController
 
   # GET /notes/new
   def new
-    @note = Note.new
+    @client = Client.find(params[:client_id])
+    @note = Note.new(:client=>@client)
   end
 
   # GET /notes/1/edit
