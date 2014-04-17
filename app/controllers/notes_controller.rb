@@ -38,6 +38,11 @@ class NotesController < ApplicationController
     end
   end
 
+  def displayfields
+    @note_template =  NoteTemplate.find(params[:id])
+    @fields = @note_template.note_template_fields
+  end
+
   # PATCH/PUT /notes/1
   # PATCH/PUT /notes/1.json
   def update

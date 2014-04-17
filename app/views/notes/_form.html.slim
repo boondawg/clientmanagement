@@ -3,9 +3,10 @@
 
     |Template
     br
-    = f.collection_select(:note_template_id, NoteTemplate.all, :id, :name, {prompt:''}, {class:'form-control input-large select2me', "data-placeholder" =>'Select Client'})
+    = f.collection_select(:note_template_id, NoteTemplate.all, :id, :name, {prompt:''}, {class:'form-control input-large select2me Selector', "data-placeholder" =>'Select Client'})
 
-    
+
+    div id="displayfields"
 
   = f.submit
 
